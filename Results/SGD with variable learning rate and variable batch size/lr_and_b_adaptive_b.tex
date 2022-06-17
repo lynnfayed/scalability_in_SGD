@@ -1,0 +1,46 @@
+% This file was created with tikzplotlib v0.9.15.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Epochs},
+xmajorgrids,
+xmin=-5.95, xmax=124.95,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymajorgrids,
+ymin=-8.8, ymax=536.8,
+ytick style={color=black}
+]
+\addplot [semithick, color0]
+table {%
+0 16
+19 16
+20 32
+39 32
+40 64
+59 64
+60 128
+79 128
+80 256
+99 256
+100 512
+119 512
+};
+\addlegendentry{batch}
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,56 @@
+% This file was created with tikzplotlib v0.9.15.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=white!80!black},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Epochs},
+xmajorgrids,
+xmin=-5.95, xmax=124.95,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ymajorgrids,
+ymin=-4.22134399414063e-06, ymax=0.000104962921142578,
+ytick style={color=black}
+]
+\addplot [semithick, color0]
+table {%
+0 0.000100016593933105
+19 0.000100016593933105
+20 7.49826431274414e-05
+39 7.49826431274414e-05
+40 5.62667846679688e-05
+59 5.62667846679688e-05
+60 4.22000885009766e-05
+79 4.22000885009766e-05
+80 3.1590461730957e-05
+99 3.1590461730957e-05
+100 2.37226486206055e-05
+119 2.37226486206055e-05
+};
+\addlegendentry{lr and b}
+\addplot [semithick, color1]
+table {%
+0 0.000100016593933105
+19 0.000100016593933105
+20 3.75509262084961e-05
+39 3.75509262084961e-05
+40 1.40666961669922e-05
+59 1.40666961669922e-05
+60 5.24520874023438e-06
+79 5.24520874023438e-06
+80 2.02655792236328e-06
+99 2.02655792236328e-06
+100 7.15255737304688e-07
+119 7.15255737304688e-07
+};
+\addlegendentry{eq}
+\end{axis}
+
+\end{tikzpicture}

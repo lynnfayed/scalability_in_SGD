@@ -1,1 +1,0 @@
-# scalability_in_SGD
